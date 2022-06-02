@@ -17,6 +17,8 @@ d3.json('data/ages.json').then((data) => {
         ages.push(d.age);
     });
     draw(ages);
+}).catch((error)=> {
+    console.log(error);
 });
 
 
